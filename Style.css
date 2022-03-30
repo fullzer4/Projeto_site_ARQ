@@ -45,6 +45,7 @@ body{
     text-transform: uppercase;
     transition: .3s;
     font-size: 1.5rem;
+    color: black;
 }
 
 .itens-caixa-texto:before {
