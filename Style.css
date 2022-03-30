@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    display: flex;
+    background-color: #E7E7E7;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logo{
+    height: 6.5rem;
+    background-color: aqua;
+}
+
+.itens {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.itens-caixa {
+    margin: 0 15px;
+}
+
+.itens-caixa-texto {
+    display: flex;
+    position: relative;
+    padding: 5px 0;
+    overflow: hidden;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s;
+    font-size: 1.5rem;
+}
+
+.itens-caixa-texto:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 50%;
+    height: 2px;
+    background-color: black;
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.itens-caixa-texto:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    width: 50%;
+    height: 2px;
+    background-color: black;
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.itens-caixa-texto:hover {
+    color: black;
+}
+
+.itens-caixa-texto:hover:before {
+    right: 0;
+}
+
+.itens-caixa-texto:hover:after {
+    left: 0;
+}
